@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 		calc += Math.random() * Math.random(); 
 	}
 	console.log(calc);
-	res.send(calc.toFixed(10));
+	res.send(os.hostname()+": "+calc.toFixed(10));
 });
 
 app.listen(port, () => {
