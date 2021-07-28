@@ -5,7 +5,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
 	calc = 0
-	for (i=0;i<10000;i++) {
+	for (i=0;i<100000;i++) {
 		calc += Math.random() * Math.random(); 
 	}
 	console.log(calc);
